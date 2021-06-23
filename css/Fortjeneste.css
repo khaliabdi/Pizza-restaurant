@@ -1,0 +1,17 @@
+.chart{
+    margin: 140px;
+    width: 1000px;
+    height: 800px;
+    zoom: 100%;
+    
+}
+
+body{
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.nav-links{
+    width: 200px;
+}

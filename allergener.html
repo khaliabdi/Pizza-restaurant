@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergener</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="scripts/gyldnemenyscript.js"></script>
+</head>
+<style>
+
+    @media (max-width: 1026px){
+        #søkefelt{display: none;}
+    }
+
+</style>
+<body>
+
+     <!--             Navbar             -->
+     <nav class="navbar has-shadow is-warning is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="images/gyldne.png" alt="logo" style="max-height: 70px" class="py-2 px-2">
+            </a>
+            <!-- BURGER MENY NAVBAR - Gjør nettsiden smalere -->
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-start">
+                <a href="forside.html" class="navbar-item">Forside</a>
+                <a href="resturanter.html" class="navbar-item">Restauranter</a>
+                <a href="ansatteside.html" class="navbar-item">Ansatt</a>
+                <a href="gyldnemeny.html" class="navbar-item">Meny</a>
+                <a href="Salg.html" class="navbar-item">Salg</a>
+            </div>
+        </div>
+        <div id="søkefelt" class="navbar-end" style="padding-left: 100px; height: 50px; margin-top: 19px; margin-right: 10px;">
+            <input type="search" text="Search..." value="" id="search" onchange="openPage()">
+            <button type="submit"><i class="fa fa-search" style="width: 50px;"></i></button>
+        </div>
+    </nav>
+
+    <!-- breadcrumbs -->
+    <div class="section">
+        <h1 class="is-size-4"><br></h1>
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="container">
+                <li><a class="has-text-grey">Forside</a></li>
+                <li><a href="gyldnemeny.html" class="has-text-grey">Meny</a></li>
+                <li><a class="has-text-weight-bold">Allergener</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <!-- product info -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered is-multiline">
+                <div class="column is-half">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Allergener</h1>
+                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, impedit! Animi dignissimos nihil in rerum, labore dolores, provident nemo exercitationem qui aut officia aliquam, perspiciatis recusandae modi placeat voluptate nam quibusdam fugiat dolorum numquam amet iusto vitae possimus. Dolor sit quae unde expedita nam explicabo vel ullam eius, cumque eum voluptatibus iusto a, praesentium, consectetur aspernatur. Facere voluptas soluta unde laudantium voluptate. Beatae voluptatibus similique dolorem voluptatum dolorum, quod deserunt omnis quidem sed non porro! Unde quo, dolorum recusandae sequi, rerum eum magnam expedita quidem assumenda ipsa ut repellendus excepturi et nisi, laboriosam voluptatem cumque eligendi laudantium nobis debitis placeat dolores nihil repellat! Animi quae asperiores qui eligendi! Alias velit nihil id vitae in quibusdam! Molestias esse quos fugiat atque, architecto commodi officia voluptatem natus enim dolor fuga cum veniam. Temporibus aspernatur sit distinctio ratione accusamus ullam delectus similique inventore. Aspernatur, consequatur totam fuga possimus, quisquam sed quis saepe repellendus natus exercitationem quo eveniet voluptas, aperiam provident dolore placeat culpa velit inventore officiis rem debitis itaque beatae iste? Ipsum dolorem tempora delectus error natus aspernatur voluptates sit doloribus expedita. Minima dignissimos veniam laudantium dolorem, cupiditate culpa cumque molestiae magnam libero neque aut? Repellat accusamus itaque molestias, iste suscipit eligendi expedita!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, laudantium laborum, atque assumenda nisi repellendus itaque quisquam sunt deserunt minus vero, aliquid animi! Facere perferendis magni ratione? Dolorem ea voluptatem enim atque. Quae aspernatur quibusdam tempora quidem, impedit quam iste repellat suscipit non mollitia, corrupti eum consequuntur perspiciatis eaque fuga vero temporibus tenetur saepe nemo dolores. Provident commodi explicabo laudantium debitis eius expedita in doloribus facere, sit dolores quidem, consectetur quod autem dolore atque quis. Laudantium maiores pariatur provident nisi explicabo delectus nulla reiciendis, molestias corrupti debitis sit tenetur repudiandae consequuntur officiis adipisci quisquam placeat cupiditate dignissimos repellendus doloribus optio.</p>
+                </div>
+                </div>
+            </div>
+    </section>
+
+        <!-- Nederste tekst -->    
+
+        <div class="section">
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cupiditate ut voluptatem recusandae id distinctio et deleniti, aliquam temporibus. Est, accusantium nesciunt suscipit eius culpa modi quisquam alias porro nihil.</p>
+            </div>
+        </div>
+    
+        <!-- footer -->
+        <footer class="footer has-background-warning-light">
+            <div class="content has-text-centered">
+                <p>Copyright 2021 Gyldne©</p>
+            </div>
+        </footer>
+    
+</body>
+</html>

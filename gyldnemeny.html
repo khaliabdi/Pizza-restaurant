@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyldne Meny</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <style>
+    @media (max-width: 1026px){
+        #søkefelt{display: none;}
+    }
+</style>
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar has-shadow is-warning is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="images/gyldne.png" alt="logo" style="max-height: 70px" class="py-2 px-2">
+            </a>
+            <!-- BURGER MENY NAVBAR - Gjør nettsiden smalere -->
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-start">
+                <a href="forside.html" class="navbar-item">Forside</a>
+                <a href="resturanter.html" class="navbar-item">Restauranter</a>
+                <a href="ansatteside.html" class="navbar-item">Ansatt</a>
+                <a href="gyldnemeny.html" class="navbar-item">Meny</a>
+                <a href="Salg.html" class="navbar-item">Salg</a>
+            </div>
+        </div>
+        <div id="søkefelt" class="navbar-end" style="padding-left: 100px; height: 50px; margin-top: 19px; margin-right: 10px;">
+            <input type="search" text="Search..." value="" id="search" onchange="openPage()">
+            <button type="submit"><i class="fa fa-search" style="width: 50px;"></i></button>
+        </div>
+    </nav>
+
+
+
+    <!-- UNDER NAVBAR -->
+    <div class="section">
+        <h1 class="is-size-4">
+            <br>
+        </h1>
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="container">
+                <li><a class="has-text-grey">Forside</a></li>
+                <li class="has-text-weight-bold"><a>Meny</a></li>
+                <li><a href="allergener.html"class="has-text-grey">Allergener</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- KAMPANJE INFO -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-one-quarter">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Kampanje</h1>
+                    <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Gyldne Blåmugg</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id perspiciatis qui eius cum molestias voluptatem maxime quae ad provident harum explicabo ducimus et aut dolor eos quisquam aperiam nam, quod necessitatibus nisi, voluptatibus aliquid. Beatae atque soluta eaque, error impedit voluptate recusandae explicabo quia reiciendis doloremque magnam temporibus. Doloremque!</p>
+                </div>
+                <div class="column is-half">
+                    <img src="images/blomugg.jpg" alt="docker blåmugg" class="px-6 is-size-2-desktop" style="height: 400px; width: 600px;">
+                </div>
+                <div class="column is-one-quarter">
+                    <img src="images/rabatt.jpg" alt="rabatt" class="is-hidden-mobile is-12-tablet">
+                </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- TABS PRODUKT INFORMASJON OG LEVERINGSINFORMASJON -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8 is-variable">
+                <div class="column is-7-tablet">
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a>Pizza Informasjon</a>
+                            </li>
+                            <li data-target="delivery-information">
+                                <a>Leverings Informasjon</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-size-5 title">Pizza Informasjon <img src="images/manbeardgif.gif" style="max-height: 40px"></h3>                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Libero soluta pariatur sapiente, quidem iusto molestiae, 
+                             cupiditate deleniti ab mollitia velit, tempora quibusdam sunt in veritatis
+                            adipisci illo numquam quisquam accusamus!</p>
+                        </div>
+                        <div id="delivery-information" class="is-hidden">
+                            <h3 class="is-size-5 title">Leverings Informasjon <img src="images/delivery.gif" style="max-height: 40px"></h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis porro corrupti obcaecati in neque sunt nesciunt illum aliquid excepturi maxime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KAMPANJE INFO -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-one-quarter">
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Kampanje</h1>
+                    <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Gyldne Student</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id perspiciatis qui eius cum molestias voluptatem maxime quae ad provident harum explicabo ducimus et aut dolor eos quisquam aperiam nam, quod necessitatibus nisi, voluptatibus aliquid. Beatae atque soluta eaque, error impedit voluptate recusandae explicabo quia reiciendis doloremque magnam temporibus. Doloremque!</p>
+                </div>
+                <div class="column is-half">
+                    <img src="images/delepizza.jpg" alt="student" class="px-6 is-size-2-desktop" style="height: 400px; width: 600px;">
+                </div>
+                <div class="column is-one-quarter">
+                    <img src="images/rabatt.jpg" alt="rabatt" class="is-hidden-mobile is-12-tablet">
+                </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- TABS PRODUKT INFORMASJON OG LEVERINGSINFORMASJON -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8 is-variable">
+                <div class="column is-7-tablet">
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a>Pizza Informasjon</a>
+                            </li>
+                            <li data-target="delivery-information">
+                                <a>Leverings Informasjon</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-size-5 title">Pizza Informasjon <img src="images/manbeardgif.gif" style="max-height: 40px"></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Libero soluta pariatur sapiente, quidem iusto molestiae, 
+                             cupiditate deleniti ab mollitia velit, tempora quibusdam sunt in veritatis
+                            adipisci illo numquam quisquam accusamus!</p>
+                        </div>
+                        <div id="delivery-information" class="is-hidden">
+                            <h3 class="is-size-5 title">Leverings Informasjon <img src="images/delivery.gif" style="max-height: 40px"></h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis porro corrupti obcaecati in neque sunt nesciunt illum aliquid excepturi maxime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CARD SECTION 1 -->
+    <section class="section">
+        <div class="container">
+            <h3 class="title has-text-centered is-size-3">Ukens Meny</h3>
+            <div class="columns mt-5 is-8 is-variable is-centered">
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card" id="card0">
+                        <div class="card-image has-text-centered px-6 has-background-warning-light">
+                            <img src="images/champisogham.jpg" alt="product">
+                        </div>
+                        <div class="card-content has-background-warning-light">
+                            <p class="title is-size-5">Gyldne Majorspesial</p>
+                            <p>170 kr</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                            </p>
+                            <p class="card-footer-item">
+                                <button onclick="menuItem0()" class="button is-grey is-small"id="button0">Fjern fra menyen</button>
+                            </p>
+                        </footer>  
+                    </div>
+                </div>
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card" id="card1">
+                        <div class="card-image has-text-centered px-6 has-background-warning-light">
+                            <img src="images/delepizza.jpg" alt="product">
+                        </div>
+                    <div class="card-content has-background-warning-light">
+                        <p class="title is-size-5">Gyldne Oliven</p>
+                        <p>126 kr</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                        </p>
+                        <p class="card-footer-item">
+                            <button onclick="menuItem1()" class="button is-grey is-small"id="button1">Fjern fra menyen</button> 
+                        </p>
+                    </footer>  
+                </div>
+            </div>
+                <div class="column is-4-tablet is-3-desktop">
+                    <div class="card" id="card2">
+                    <div class="card-image has-text-centered px-6 has-background-warning-light">
+                        <img src="images/langpanne.jpg" alt="product">
+                    </div>
+                <div class="card-content has-background-warning-light">
+                    <p class="title is-size-5">Gyldne Sinsenspesial</p>
+                    <p>100 kr</p>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                    </p>
+                    <p class="card-footer-item">
+                        <button onclick="menuItem2()" class="button is-grey is-small"id="button2">Fjern fra menyen</button>
+                    </p>
+                </footer>  
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <!-- CARD SECTION 2 -->
+        <section class="section">
+            <div class="container">
+                <div class="columns mt-5 is-8 is-variable is-centered">
+                    <div class="column is-4-tablet is-3-desktop">
+                        <div class="card" id="card3">
+                            <div class="card-image has-text-centered px-6 has-background-warning-light">
+                                <img src="images/gyldnedeluxe.jpg" alt="product">
+                            </div>
+                            <div class="card-content has-background-warning-light">
+                                <p class="title is-size-5">Gyldne Deluxe</p>
+                                <p>195 kr</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                                </p>
+                                <p class="card-footer-item">
+                                    <button onclick="menuItem3()" class="button is-grey is-small"id="button3">Fjern fra menyen</button>
+                                </p>
+                            </footer>  
+                        </div>
+                    </div>
+                    <div class="column is-4-tablet is-3-desktop"><div class="card" id="card4">
+                        <div class="card-image has-text-centered px-6 has-background-warning-light">
+                            <img src="images/innbaktpizza.jpg" alt="product">
+                        </div>
+                        <div class="card-content has-background-warning-light">
+                            <p class="title is-size-5">Gyldne Inbakt</p>
+                            <p>175 kr</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                            </p>
+                            <p class="card-footer-item">
+                                <button onclick="menuItem4()" class="button is-grey is-small"id="button4">Fjern fra menyen</button>
+                            </p>
+                        </footer>  
+                    </div>
+                </div>
+                    <div class="column is-4-tablet is-3-desktop"><div class="card" id="card5">
+                        <div class="card-image has-text-centered px-6 has-background-warning-light">
+                            <img src="images/kylling123pi.jpg" alt="product">
+                        </div>
+                    <div class="card-content has-background-warning-light">
+                        <p class="title is-size-5">Gyldne Kylling og Løk</p>
+                        <p>125 kr</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                        </p>
+                        <p class="card-footer-item">
+                            <button onclick="menuItem5()" class="button is-grey is-small" id="button5">Fjern fra menyen</button>
+                        </p>
+                    </footer>  
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- CARD SECTION 3 -->
+        <section class="section">
+            <div class="container">
+                <div class="columns mt-5 is-8 is-variable is-centered">
+                    <div class="column is-4-tablet is-3-desktop">
+                        <div class="card" id="card6">
+                            <div class="card-image has-text-centered px-6 has-background-warning-light">
+                                <img src="images/laksepizza.jpg" alt="product">
+                            </div>
+                            <div class="card-content has-background-warning-light">
+                                <p class="title is-size-5">Gyldne Bryggaspesial</p>
+                                <p>225 kr</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                                </p>
+                                <p class="card-footer-item">
+                                    <button onclick="menuItem6()" class="button is-grey is-small" id="button6">Fjern fra menyen</button>
+                                </p>
+                            </footer>  
+                        </div>
+                    </div>
+                    <div class="column is-4-tablet is-3-desktop"><div class="card" id="card7">
+                        <div class="card-image has-text-centered px-6 has-background-warning-light">
+                            <img src="images/grunerloka.jpg" alt="product">
+                        </div>
+                        <div class="card-content has-background-warning-light">
+                            <p class="title is-size-5">Gyldne Løkkaspesial</p>
+                            <p>145 kr</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                            </p>
+                            <p class="card-footer-item">
+                                <button onclick="menuItem7()" class="button is-grey is-small" id="button7">Fjern fra menyen</button>
+                            </p>
+                        </footer>  
+                    </div>
+                </div>
+                    <div class="column is-4-tablet is-3-desktop"><div class="card" id="card8">
+                        <div class="card-image has-text-centered px-6 has-background-warning-light">
+                            <img src="images/pepperonipassin.jpg" alt="product">
+                        </div>
+                    <div class="card-content has-background-warning-light">
+                        <p class="title is-size-5">Gyldne Tony's Pepperoni</p>
+                        <p>115 kr</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                        </p>
+                        <p class="card-footer-item">
+                            <button onclick="menuItem8()" class="button is-grey is-small" id="button8">Fjern fra menyen</button>
+                        </p>
+                    </footer>  
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- DESSERT SECTION -->
+        <section class="section" id="dessert">
+            <div class="container" id="toggle-on-off">
+                <h3 class="title has-text-centered is-size-4">Desserter</h3>
+                <div class="columns mt-5 is-8 is-variable is-centered">
+                    <div class="column is-4-tablet is-3-desktop">
+                        <div class="card">
+                            <div class="card-image has-text-centered px-7 has-background-warning-light">
+                                <img src="images/cheesecake.jpg" alt="product">
+                            </div>
+                            <div class="card-content has-background-warning-light">
+                                <p class="title is-size-5">Gyldne Cheesecake</p>
+                                <p>125 kr</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                                </p>
+                            </footer>  
+                        </div>
+                    </div>
+                    <div class="column is-4-tablet is-3-desktop"><div class="card">
+                        <div class="card-image has-text-centered px-7 has-background-warning-light">
+                            <img src="images/sjokoladehazel.jpg" alt="product">
+                        </div>
+                        <div class="card-content has-background-warning-light">
+                            <p class="title is-size-5">Gyldne Sjokohassel</p>
+                            <p>105 kr</p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                            </p>
+                        </footer>  
+                    </div>
+                </div>
+                    <div class="column is-4-tablet is-3-desktop"><div class="card">
+                        <div class="card-image has-text-centered px-7 has-background-warning-light">
+                            <img src="images/honningpizza.jpg" alt="product">
+                        </div>
+                    <div class="card-content has-background-warning-light">
+                        <p class="title is-size-5">Gyldne Honningpizza</p>
+                        <p>95 kr</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="allergener.html" class="has-text-grey">Vis allergener</a>
+                        </p>
+                    </footer>  
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+            <!--BUTTON FOR DESSERT-->
+    <section class="section is-hidden-mobile">
+        <div class="container">
+            <div class="columns is-centered">
+                <button onclick="btnFunction()" id="dsrtBtn" value="Open" class="button is-black is-rounded is-outlined">Skjul Desserter</button>
+            </div>
+        </div>
+    </section>
+
+
+                <!-- DRIKKE SECTION -->
+                <section class="section" id="drikke">
+                    <div class="container" id="toggle-on-off">
+                        <h3 class="title has-text-centered is-size-4">Drikke</h3>
+                        <div class="columns mt-5 is-8 is-variable is-centered">
+                            <div class="column is-4-tablet is-3-desktop">
+                                <div class="card">
+                                    <div class="card-image has-text-centered px-7 has-background-warning-light">
+                                        <img src="images/pepsi.jpg" alt="product">
+                                    </div>
+                                    <div class="card-content has-background-warning-light">
+                                        <p class="title is-size-5">Pepsi Max</p>
+                                        <p>40 kr</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-4-tablet is-3-desktop"><div class="card">
+                                <div class="card-image has-text-centered px-7 has-background-warning-light">
+                                    <img src="images/cola.jpg" alt="product">
+                                </div>
+                                <div class="card-content has-background-warning-light">
+                                    <p class="title is-size-5">Coca Cola</p>
+                                    <p>40 kr</p>
+                                </div>  
+                            </div>
+                        </div>
+                            <div class="column is-4-tablet is-3-desktop"><div class="card">
+                                <div class="card-image has-text-centered px-7 has-background-warning-light">
+                                    <img src="images/jagermeister.jpg" alt="product">
+                                </div>
+                            <div class="card-content has-background-warning-light">
+                                <p class="title is-size-5">Jägermeister</p>
+                                <p>95 kr</p>
+                            </div> 
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+
+    <!-- NEDERSTE TEKST -->    
+
+    <div class="section">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cupiditate ut voluptatem recusandae id distinctio et deleniti, aliquam temporibus. Est, accusantium nesciunt suscipit eius culpa modi quisquam alias porro nihil.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer has-background-warning-light">
+        <div class="content has-text-centered">
+            <p>Copyright 2021 Gyldne©</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="scripts/gyldnemenyscript.js"></script>
+</body>
+</html> 

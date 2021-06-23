@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/Fortjeneste.css">
+    <!--             Navbar             -->
+    <nav class="navbar has-shadow is-warning is-fixed-top">
+      <div class="navbar-brand">
+          <a class="navbar-item">
+              <img src="images/gyldne.png" alt="logo" style="max-height: 70px" class="py-2 px-2">
+          </a>
+          <!-- BURGER MENY NAVBAR -->
+          
+          <a class="navbar-burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+      </div>
+    
+      <div class="navbar-menu" id="nav-links">
+          <div class="navbar-start">
+              <a href="forside.html" class="navbar-item">Forside</a>
+              <a href="resturanter.html" class="navbar-item">Restauranter</a>
+              <a href="ansatteside.html" class="navbar-item">Ansatte</a>
+              <a href="gyldnemeny.html" class="navbar-item">Meny</a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Salg
+                </a>
+            
+                <div class="navbar-dropdown">
+            
+                  <a class="navbar-item is-centerd" href="Fortjeneste.html">
+                   Fortjeneste på salg
+                  </a>
+                  <a class="navbar-item is-centerd" href="Salg.html">
+                  Fortjeneste på Restaurantene
+                  </a>
+                </div>
+              </div>
+              
+          </div>
+      </div>
+      <div id="søkefelt" class="navbar-end" style="padding-left: 100px; height: 50px; margin-top: 19px; margin-right: 10px;">
+        <input type="search" text="Search..." value="" id="search" onchange="openPage()">
+        <button type="submit"><i class="fa fa-search" style="width: 50px;"></i></button>
+    </div>
+      
+    </nav>
+    <style>
+    
+      @media (max-width: 1026px){
+          #søkefelt{display: none;}
+      }
+    
+    </style>
+    
+  </head>
+  <body>
+      
+    <div id="piechart" class="chart"></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+       
+
+        var data = google.visualization.arrayToDataTable([
+          ['Retter', 'Salg per dag'],
+          ['Pizza',     200000],
+          ['Drikke',      160000],
+          ['Dessert',  90000],
+        ]);
+
+        var options = {
+          title: 'Daglig Salgsintekt ',
+          pieSliceText: 'value' 
+
+          
+        };
+
+        var formatter = new google.visualization.NumberFormat({
+    prefix: 'NOK'
+});
+formatter.format(data, 1);
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+      //mobile menu
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active')
+});
+
+function openPage(){
+                var x = document.getElementById("search").value;
+
+
+                if(x==="allergener" || x==="Allergener" || x==="ALLERGENER"){
+                    window.open("allergener.html");
+                }
+                if(x==="forside" || x==="Forside" || x==="FORSIDE"){
+                    window.open("forside.html");
+                }
+                if(x==="salg" || x==="Salg" || x==="SALG"){
+                    window.open("salg.html");
+                }
+                if(x==="fortjeneste" || x==="Fortjeneste" || x==="FORTJENESTE"){
+                    window.open("fortjeneste.html");
+                }
+                if(x==="ansatte" || x==="Ansatte" || x==="ANSATTE"){
+                    window.open("ansatteside.html");
+                }
+                if(x==="restauranter" || x==="Restauranter" || x==="RESTAURANTER"){
+                    window.open("resturanter.html");
+                }
+                if(x==="meny" || x==="Meny" || x==="MENY"){
+                    window.open("gyldnemeny.html");
+                }
+            }
+
+    </script>
+    
+    <footer class="footer has-background-warning-light">
+      <div class="content has-text-centered">
+          <p>Copyright 2021 Gyldne</p>
+      </div>
+  </footer>
+  </body>
+</html>

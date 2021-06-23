@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyldne-Ansatt</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <script defer type="module" src="scripts/ansatter-generate.js"></script>
+    
+    
+    <style>
+
+      @media (max-width: 1026px){
+          #søkefelt{display: none;}
+      }
+  
+  </style>
+    
+
+  </head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body is-fullheight-with-navbar">
+    </div>
+  </section>
+  
+
+    <!-- NAVBAR -->
+    <nav class="navbar has-shadow is-warning is-fixed-top">
+      <div class="navbar-brand">
+          <a class="navbar-item">
+              <img src="images/gyldne.png" alt="logo" style="max-height: 70px" class="py-2 px-2">
+          </a>
+          <!-- BURGER MENY NAVBAR -->
+          
+          <a class="navbar-burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+      </div>
+          <!-- Lenker til andre sider -->
+      <div class="navbar-menu" id="nav-links">
+          <div class="navbar-start">
+              <a href="forside.html" class="navbar-item">Forside</a>
+              <a href="resturanter.html" class="navbar-item">Restauranter</a>
+              <a href="ansatteside.html" class="navbar-item">Ansatt</a>
+              <a href="gyldnemeny.html" class="navbar-item">Meny</a>
+              
+              <a href="Salg.html" class="navbar-item">Salg</a>
+             
+              
+          </div>
+      </div>
+      <div id="søkefelt" class="navbar-end" style="padding-left: 100px; height: 50px; margin-top: 19px; margin-right: 10px;">
+        <input type="search" text="Search..." value="" id="search" onchange="openPage()">
+        <button type="submit"><i class="fa fa-search" style="width: 50px;"></i></button>
+    </div>
+
+      
+  </nav>
+  
+
+      <!-- Henter ut scriptet ansatter-section fra generator -->
+      <main>
+        <section id="ansatter-section" class="columns is-3" style="border: 100px;">
+
+        </section>
+        
+    </main>
+    
+    </div>
+    <!-- For å skille ut artikler fra div-er som skal inneholde personer-->
+    <section>
+      <article class="media">
+        <figure class="media-left">
+          
+        </figure>
+        <div class="media-content">
+          <div class="content">
+            <p>
+             
+      <h1 class="is-size-4" >Sjåfør</h1>
+            </p>
+          </div>
+    </section>
+    <!-- Personer med bilder, navn etc -->
+
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="images/person2.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Akon Lamar</strong> <small>akon@gyldne.no</small> <small>972 52 987</small>
+            <br>
+            AnsattID: 1405
+          </p>
+        </div>
+        
+          </div>
+        
+      </div>
+     
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="images/unnamed.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Curtis James </strong> <small>curtis@gyldne.no</small> <small>951 45 055</small>
+            <br>
+            AnsattID: 1020.
+          </p>
+        </div>
+        
+
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+           
+    <h1 class="is-size-4" >Bakere</h1>
+          </p>
+        </div>
+    <section>
+      
+    </section>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="images/person8.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Slim Shady</strong> <small>slim@gyldne.no</small> <small>222 22 222</small>
+            <br>
+           AnsattID: 2212
+          </p>
+          <p>Bogstadveien 39, 0366 Oslo</p>
+        </div>
+        
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="images/person9.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Kendrick Lamar</strong> <small>kenlam@gyldne.no</small> <small>458 45 054</small>
+            <br>
+            AnsattID: 6581.
+          </p>
+          <p>Stranden 65, 0250 Oslo</p>
+        </div>
+        
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="images/person10.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>John Travolta</strong> <small>John@gyldne.no</small> <small>456 45 782</small>
+            <br>
+          AnsattID: 5487 
+          </p>
+          <p>Stranden 65, 0250 Oslo</p>
+        </div>
+        
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="images/person14.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Jack Sparrow</strong> <small>Jack@gyldne.no</small> <small>445 54 442</small>
+            <br>
+          AnsattID: 54855
+          </p>
+          <p>Bogstadveien 39, 0366 Oslo</p>
+        </div>
+        
+    </article>
+    
+    
+    
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="images/person18.jpg">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Kristian Haakonson</strong> <small>Kristian@gyldne.no</small> <small>920 87 525</small>
+            <br>
+          AnsattID:6783 
+          </p>
+          <p>Sinsenveien 31, 0572</p>
+        </div>
+        
+    </article>
+
+  </article>
+  <article class="media">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="images/person17.jpg">
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Håkon Håkonossen</strong> <small>Haakon@gyldne.no</small> <small>899 89 894</small>
+          <br>
+        AnsattID:5489 
+        </p>
+        <p>Bogstadveien 39, 0366 Oslo</p>
+      </div>
+      
+  </article>
+
+  <article class="media">
+    <figure class="media-left">
+      
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        <p>
+         
+  <h1 class="is-size-4" >Generell Service</h1>
+        </p>
+      </div>
+  <section>
+    
+  </section>
+
+</article>
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="images/person16.jpg">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Jesper Jespersen</strong> <small>Jespers1d@gyldne.no</small> <small>943 34 345</small>
+        <br>
+      AnsattID:7894 
+      <p>Gruners gate 10, 0552 Oslo</p>
+      </p>
+    </div>
+    
+</article>
+
+</article>
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="images/person12.jpg">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Bill Gates</strong> <small>BillGd@gyldne.no</small> <small>999 99 999</small>
+        <br>
+      AnsattID:5789 
+      </p>
+      <p>Stranden 65, 0250 Oslo</p>
+    </div>
+    
+</article>
+
+</article>
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="images/person13.jpg">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Steve Jobs</strong> <small>SteveJ@gyldne.no</small> <small>345 47 525</small>
+        <br>
+      AnsattID: 5476 
+      </p>
+      <p>Sinsenveien 31, 0572</p>
+    </div>
+    
+</article>
+</article>
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="images/person11.jpg">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Jhonny Bravo</strong> <small>Jhonny@gyldne.no</small> <small>452 824 235</small>
+        <br>
+      AnsattID:6512 
+      </p>
+    </div>
+    
+</article>
+</article>
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="images/person15.jpg">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Ale Jan</strong> <small>Alejand@gyldne.no</small> <small>340 47 525</small>
+        <br>
+      AnsattID:0000 
+      </p>
+      <p>Bogstadveien 39</p>
+    </div>
+    
+</article>
+
+<!-- Script - kun for burger meny, og search-metode -->
+<script src="scripts/resturanter.js"></script>
+
+    
+
+</body>
+</html>

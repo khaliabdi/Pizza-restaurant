@@ -1,0 +1,19 @@
+
+.imgShow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.imgDiv {
+   width: 60%;
+   height: 70%;
+   box-shadow: 0 0 25px -3px #ffc947;
+   margin-top: 3%;
+   margin-left: 20%;
+   margin-right: 20%;
+   margin-bottom: 3%;
+}
+
+

@@ -1,0 +1,228 @@
+﻿<!doctype HTML>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Resturanter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma-rtl.min.css">
+    <style>
+
+      @media (max-width: 1026px){
+          #søkefelt{display: none;}
+      }
+
+  </style>
+
+  </head>
+
+<body>
+
+  <!--             Navbar             -->
+    
+  <!--
+  <nav class="navbar has-shadow is-white is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="logo.png" alt="site-logo" style="max-height: 70px;" class="py-2 px-2">
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a class="navbar-item">Meny</a>
+          <a class="navbar-item" href="resturanter.html">Resturanter</a>
+          <a class="navbar-item">Ansatte</a>
+          <a class="navbar-item">Salg</a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Kontakt oss!
+                </a>
+        
+                <div class="navbar-dropdown">
+                
+                  <a class="navbar-item is-centerd" href="https://www.instagram.com/">
+                    <img src="IG_icon.png" alt="Instagram-logo" style="max-height: 40px;">
+                  </a>
+                  <a class="navbar-item is-centerd" href="https://www.facebook.com/">
+                    <img src="FB_icon.png" alt="Facebook-logo" style="max-height: 35px;">
+                  </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item">
+                    Telefon
+                  </a>
+                </div>
+              </div>
+            </div>
+          -->
+
+          <nav class="navbar is-warning is-fixed-top">
+
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="images/gyldne.png" alt="logo" style="max-height: 80px" class="py-1 px-1">
+                </a>
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+    
+            <div class="navbar-menu" id="nav-links">
+                <div class="navbar-end">
+                    <a href="forside.html" class="navbar-item">Forside</a>
+                    <a href="resturanter.html" class="navbar-item">Restauranter</a>
+                    <a href="ansatteside.html" class="navbar-item">Ansatte</a>
+                    <a href="gyldnemeny.html" class="navbar-item">Meny</a>
+                   
+                    
+                    <a href="Salg.html" class="navbar-item">Salg</a>
+                </div>
+            </div>
+            <div id="søkefelt" class="navbar-end" style="padding-left: 100px; height: 50px; margin-top: 19px; margin-right: 10px;">
+              <input type="search" text="Search..." value="" id="search" onchange="openPage()">
+              <button type="submit"><i class="fa fa-search" style="width: 50px;"></i></button>
+          </div>
+
+        </nav>
+        
+    
+
+  <!--             Grünerløkka             -->
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-2by1">
+          <img src="images/gylden_lokka.jpg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">Gyldene Pizza Günerløkka</p>
+            <p class="subtitle is-6">@gyldene_lokka</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac pretium eros. Etiam facilisis felis ut porta fermentum. Vivamus malesuada justo faucibus imperdiet efficitur. Sed semper metus vitae mi ullamcorper, eu egestas ligula egestas. Fusce bibendum dolor augue, a elementum tortor hendrerit in. Nulla facilisi. Aliquam hendrerit ante ac eros pharetra, ac iaculis massa pulvinar. Etiam venenatis sit amet arcu vel lobortis. Donec ut nibh ac orci pellentesque facilisis vitae sit amet augue. Aenean quis nisl vel mi semper congue. Aenean consequat posuere orci, id iaculis massa pulvinar sed.<br>
+          <br>
+          <a href="https://www.google.com/maps/place/Gr%C3%BCners+gate+10,+0552+Oslo/@59.9234532,10.7579485,19.
+          54z/data=!4m8!1m2!2m1!1sgoogle+maps!3m4!1s0x46416e68a2e5cc5b:0x39e2794100690fc9!8m2!3d59.923542!4d10.7580746">Her finner du oss!</a><br>
+          <br>
+          Adresse: Grüners gate 10, 0552 Oslo
+          <br>
+          Tlf nr: +47 455 55 724
+        </div>
+      </div>
+    </div>
+
+<!--             Majorstua             -->
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-2by1">
+          <img src="images/gylden_majorstua.jpg" alt="Gylden Majorstuen">
+        </figure>
+      </div>
+      <div class="card-content is-first">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">Gyldene Pizza Majorstuen</p>
+            <p class="subtitle is-6">@gyldene_majorstuen</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac pretium eros. Etiam facilisis felis ut porta fermentum. Vivamus malesuada justo faucibus imperdiet efficitur. Sed semper metus vitae mi ullamcorper, eu egestas ligula egestas. Fusce bibendum dolor augue, a elementum tortor hendrerit in. Nulla facilisi. Aliquam hendrerit ante ac eros pharetra, ac iaculis massa pulvinar. Etiam venenatis sit amet arcu vel lobortis. Donec ut nibh ac orci pellentesque facilisis vitae sit amet augue. Aenean quis nisl vel mi semper congue. Aenean consequat posuere orci, id iaculis massa pulvinar sed. <br>
+          <br>
+          <a href="https://www.google.com/maps/place/Bogstadveien+39B,+0366+Oslo/@59.927124,10.7200837,18z/data=!4m5!3
+          m4!1s0x46416dd9f6a57143:0xf4b4e9a29459b693!8m2!3d59.927185!4d10.7202876">Her finner du oss!</a><br>
+          <br>
+          Adresse: Bogstadveien 39, 0366 Oslo
+          <br>
+          Tlf nr: +47 595 55 987
+        </div>
+      </div>
+    </div>
+
+  <!--             Akerbrygge             -->
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-2by1">
+          <img src="images/gylden_akerbrygge.png" alt="Gylden Akerbrygge">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">Gyldene Pizza Akerbrygge</p>
+            <p class="subtitle is-6">@gyldene_akerbrygge</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id neque elementum, luctus nulla et, vulputate arcu. Pellentesque vehicula ullamcorper arcu id consectetur. Praesent non erat est. Pellentesque eget mauris eget enim gravida vehicula in ac leo. Nam consequat scelerisque ultrices. Sed tincidunt aliquet massa, eget placerat dui lobortis vitae. Aenean ultricies posuere nisl at accumsan. Vivamus vel tincidunt sem. Nunc lacinia leo vitae erat pellentesque, sit amet tincidunt sapien iaculis. Donec malesuada nibh et neque tempor, ac molestie risus ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;<br>
+          <br>
+          <a href="https://www.google.com/maps/place/Stranden+65,+0250+Oslo/@59.9089898,10.7245574,19z/data=!3m1!4b1!4m5!
+          3m4!1s0x46416e819b20d451:0x4cd961b551bf95f8!8m2!3d59.9089891!4d10.7251046">Her finner du oss!</a><br>
+          <br>
+          Adresse: Stranden 65, 0250 Oslo
+          <br>
+          Tlf nr: +47 455 53 954
+        </div>
+      </div>
+    </div>
+
+    <!--             Sinsen            -->
+
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-2by1">
+          <img src="images/gylden_sinsen.jpg" alt="Gylden Sinsen">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">Gyldene Pizza Sinsen</p>
+            <p class="subtitle is-6">@gylden_sinsen</p>
+          </div>
+        </div>
+    
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id neque elementum, luctus nulla et, vulputate arcu. Pellentesque vehicula ullamcorper arcu id consectetur. Praesent non erat est. Pellentesque eget mauris eget enim gravida vehicula in ac leo. Nam consequat scelerisque ultrices. Sed tincidunt aliquet massa, eget placerat dui lobortis vitae. Aenean ultricies posuere nisl at accumsan. Vivamus vel tincidunt sem. Nunc lacinia leo vitae erat pellentesque, sit amet tincidunt sapien iaculis. Donec malesuada nibh et neque tempor, ac molestie risus ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;<br>
+          <br>
+          <a href="https://www.google.com/maps/place/Gr%C3%BCners+gate+10,+0552+Oslo/@59.9234532,10.7579485,19.
+          54z/data=!4m8!1m2!2m1!1sgoogle+maps!3m4!1s0x46416e68a2e5cc5b:0x39e2794100690fc9!8m2!3d59.923542!4d10.7580746">Her finner du oss!</a><br>
+          <br>
+          Kom å besøk oss på: Sinsenveien 32, 0572 Oslo
+          <br>
+          Tlf nr: +47 455 42 123
+        </div>
+      </div>
+    </div> 
+  
+
+  <!-- Nederste tekst -->
+
+  <div class="section">
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cupiditate ut voluptatem recusandae id distinctio et deleniti, aliquam temporibus. Est, accusantium nesciunt suscipit eius culpa modi quisquam alias porro nihil.</p>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="footer has-background-warning-light">
+    <div class="content has-text-centered">
+        <p>Copyright 2021 Gyldne</p>
+    </div>
+</footer>
+
+<!-- Script -->
+<script src="scripts/resturanter.js"></script>
+
+</body>
+</html>
